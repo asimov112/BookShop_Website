@@ -1,0 +1,24 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<div class="page">
+    <div class="books-container">
+        @for(var i = 0; i < 9; i++) {
+            <div class="card">
+                <div class="row">
+                    <div class="col-4">
+                        <img src="" alt="non-found" width="200" height="200"/>
+                    </div>
+                    <div class="col-8">
+                        <h4>Book title here</h4>
+                        <h5>Genre Type</h5>
+                        <p>Insert Author Name here</p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
